@@ -9,7 +9,21 @@ const commitement: Commitment = "confirmed";
 const connection = new Connection("https://api.testnet.solana.com", commitement);
 
 async function main() {
+  try {
+    const mint = await createMint(
+      connection,
+      keypair,
+      keypair.publicKey,
+      null,
+      6
+    )
 
+    console.log(`minted pub key is ${mint.toString()}`);
+
+  } catch (e) {
+    console.log(e);
+
+  }
 }
 
 main();
