@@ -9,7 +9,7 @@ const commitement: Commitment = "confirmed";
 const connection = new Connection("https://api.testnet.solana.com", commitement);
 
 const mint = new PublicKey("59xzWKF8LbmGweS1TU91F2T8o1wnUjFfThsrCNdMU8nB");
-const pub = new PublicKey("2FvMsMY1DKpnJL3FUk4HBPVffzK4iF55rZHKPNgikef1");
+// const pub = new PublicKey("2FvMsMY1DKpnJL3FUk4HBPVffzK4iF55rZHKPNgikef1");
 
 async function main() {
   const ata = getAssociatedTokenAddressSync(mint, keypair.publicKey, false, TOKEN_2022_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID);
