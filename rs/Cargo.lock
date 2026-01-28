@@ -2349,12 +2349,14 @@ dependencies = [
 name = "rs"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "solana-client",
  "solana-commitment-config",
  "solana-sdk",
  "solana-system-interface 3.0.0",
  "spl-associated-token-account-interface",
  "spl-token-interface",
+ "tokio",
 ]
 
 [[package]]
